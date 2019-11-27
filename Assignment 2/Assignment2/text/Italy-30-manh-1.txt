@@ -1,0 +1,7 @@
+TP is: 4352407
+TN is: 5579403
+FP is: 34161
+FN is: 32171
+Sensitivity is: 0.9926626918257584
+Specificity is: 0.9939145612306193
+Accuracy is: 0.9933655673224085
