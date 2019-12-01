@@ -4,7 +4,9 @@ from sklearn.naive_bayes import GaussianNB
 from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier as Dt
 
+
 data = pd.read_csv('student-data.csv')
+
 for col, col_data in data.iteritems():
     if col_data.dtype == object:
         unique_list = col_data.unique()
