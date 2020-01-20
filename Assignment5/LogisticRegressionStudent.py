@@ -22,9 +22,9 @@ y = data['passed']
 data = data.drop(columns='passed')
 X_train, X_test, y_train, y_test = train_test_split(data, y, test_size=0.25, random_state=1)
 
-logistic_regression = LogisticRegression()
+logistic_regression = LogisticRegression(solver='lbfgs')
 logistic_regression.fit(X_train, y_train)
-y_predict = logistic_regression.predict(X_test[0:])
+y_predict = logistic_regression.predict(X_test)
 acc_logistic_regression = logistic_regression.score(X_test, y_test)
 print("Logistic Regression accuracy:", acc_logistic_regression)
 cm = metrics.confusion_matrix(y_test, y_predict)
